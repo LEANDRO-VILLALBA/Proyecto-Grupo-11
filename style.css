@@ -1,0 +1,224 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace
+}
+
+/* -------------- Header ----------------------*/
+
+.navcss{
+    font-size: 13px;
+}
+
+/* -------------- Main ----------------------*/
+/*.cont-banner {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://t4.ftcdn.net/jpg/04/12/21/77/360_F_412217703_eJh9f9CcUUHgLaN3LDIZudkHGxMrcTD7.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+*/
+
+
+.banner{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://cdn.bhdw.net/im/source-code-wallpaper-59960_w635.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    font-weight: medium;
+    font-size: 32px;
+    margin-top: 15%;
+}
+
+/* seccion de grilla */
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+ }
+
+.cont-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .cont-proyectos {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+
+/* box-style */
+
+ .cont-box {
+    background-color: #F0EBE3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: -6px 6px 22px -2px rgba(0,0,0,0.41);
+ }
+
+ .cont-img {
+    width: 100%;
+    margin: 5px auto;
+ }
+
+ .cont-img img {
+    width: 100%;
+ }
+
+ h3 {
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+ }
+
+ p {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+
+ .cont-button {
+    text-align: center;
+ }
+
+ button {
+    padding:10px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    border:solid black 1px;
+ }
+
+ button:hover {
+    background-color: black;
+    color: white;
+    transition: 200ms;
+ }
+
+
+
+/* --------- Secion Formulario---------- */
+
+
+
+.section-formulario {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-formulario p {
+    text-align: center;
+    font-size: 50px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.boos-form {
+    width: 500px;
+}
+
+.boton-enviar {
+    padding-top: 10px;
+}
+
+
+
+/* ----------------- Footer ----------------------*/
+
+.cont-vacio {
+    height: 80px;
+}
+
+hr {
+    color: #676b6e;
+}
+
+.cont-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #676b6e;
+    margin: 10px;
+
+}
+
+.cont-div-footer {
+    padding: 10px;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.subtitle{
+    font-weight: bold;
+}
+
+a {
+    color: #676b6e;
+}
+
+.cont-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebeced;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* media querys */
+
+@media (max-width: 980px) {
+    .cont-proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boos-form {
+        width: 100%;
+    }
+
+    .cont-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 680px) {
+    .cont-proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+
+    .cont-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
